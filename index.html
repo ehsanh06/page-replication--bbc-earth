@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>BBC Earth</title>
+    </head>
+
+    <body>
+        <header>
+            <!-- Logo -->
+            <div class="logo-wrapper"></div>
+
+            <!-- My BBC -->
+            <div id="mybbc-wrapper">
+                <div class="mybbc-signin">
+                    <a id="mybbc-signin--link" href="#">
+                        <span id="mybbc-signin-username">Sign In</span>
+                    </a>
+                </div>
+                <div class="mybbc-notifications-wrapper">
+                    <a name="notifications" id="mybbc-notifications" href="#">
+                        <!-- ::before  -->
+                        <div class="notifications-link--triangle"></div>
+                        <div class="notifications-link--triangle"></div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav role="navigation" aria-label="BBC" class="nav-container">
+                <ul class="nav-list">
+                    <li id="nav-news" class="nav-list__list-item">
+                        <a href="#">News</a>
+                    </li>
+                    <li id="nav-sport" class="nav-list__list-item">
+                        <a href="#">Sport</a>
+                    </li>
+                    <li id="nav-weather" class="nav-list__list-item">
+                        <a href="#">Weather</a>
+                    </li>
+                    <li id="nav-iplayer" class="nav-list__list-item">
+                        <a href="#">iPlayer</a>
+                    </li>
+                    <li id="nav-tv" class="nav-list__list-item">
+                        <a href="#"></a>TV</li>
+                    <li id="nav-radio" class="nav-list__list-item">
+                        <a href="#">Radio</a>
+                    </li>
+
+                    <!-- Dropdown  -->
+                    <li id="nav-more" class="nav-list__list-item">
+                        <a href="">More
+                            <span class="nav-arrow-dropdown"></span>
+                        </a>
+                        <div class="nav-list__dropdown__panel">
+                            <h2 id="nav-list__dropdown__panel-title">MORE</h2>
+                            <ul class="nav-list__dropdown__list">
+                                <li id="nav-cbbc" class="nav-list__dropdown__list-item">
+                                    <a href="#">CBBC</a>
+                                </li>
+                                <li id="nav-cbeebies" class="nav-list__dropdown__list-item">
+                                    <a href="#">CBeebies</a>
+                                </li>
+                                <li id="nav-food" class="nav-list__dropdown__list-item">
+                                    <a href="#">Food</a>
+                                </li>
+                                <li id="nav-bitesize" class="nav-list__dropdown__list-item">
+                                    <a href="#">Bitesize</a>
+                                </li>
+                                <li id="nav-music" class="nav-list__dropdown__list-item">
+                                    <a href="#">Music</a>
+                                </li>
+                                <li id="nav-earth" class="nav-list__dropdown__list-item">
+                                    <a href="#">Earth</a>
+                                </li>
+                                <li id="nav-arts" class="nav-list__dropdown__list-item">
+                                    <a href="#">Arts</a>
+                                </li>
+                                <li id="nav-digital" class="nav-list__dropdown__list-item">
+                                    <a href="#">Make It Digital</a>
+                                </li>
+                                <li id="nav-taster" class="nav-list__dropdown__list-item">
+                                    <a href="#">Taster</a>
+                                </li>
+                                <li id="nav-local" class="nav-list__dropdown__list-item">
+                                    <a href="#">Local</a>
+                                </li>
+                                <li id="nav-tomorrowsworld" class="nav-list__dropdown__list-item">
+                                    <a href="#">Tomorrow's World</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Search bar -->
+            <div class="search-bar__container">
+                <!-- Search glyph viewed min-width 600px -->
+                <a class="search-bar__mobile-button" href="#" title="Search the BBC">Search</a>
+
+                <form action="get" role="search" accept-charset="utf-8" class="search-bar__form">
+                    <div>
+                        <input type="text" placeholder="Search">
+                        <button class="search-bar__button"></button>
+                    </div>
+                </form>
+            </div>
+        </header>
+
+        <main>
+
+            <!-- Banner section -->
+            <section class="genre-banner__section">
+                <div class="genre-banner__logo-container">
+                    <span id="genre-banner__logo"></span>
+                </div>
+                <nav class="genre-banner__nav-container">
+                    <ul class="genre-banner__nav-list">
+                        <li class="genre-banner__nav-list-item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="genre-banner__nav-list-item">
+                            <a href="#">British Wildlife</a>
+                        </li>
+                        <li class="genre-banner__nav-list-item">
+                            <a href="#">Filming Techniques</a>
+                        </li>
+                        <li class="genre-banner__nav-list-item">
+                            <a href="#">Earth on TV &amp; Radio</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="genre-banner__title-container">
+                    <a href="#">
+                        <h2 class="genre-banner__title-container">How the ocean transforms at night</h2>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Promo section -->
+            <section class="promo__section">
+                <ul class="promo__list">
+
+                    <!-- Science of Surfing and Waves -->
+                    <li class="promo__list-item">
+                        <a class="promo__list-item__link" href="#">
+                            <img src="assets/img/304x171/p056mpw8.jpg" alt="Science of Surfing">
+                            <div class="promo__list-item__img-desc">
+                                Incredible science of surging and waves
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Blue Beak Bird -->
+                    <li class="promo__list-item">
+                        <a class="promo__list-item__link" href="#">
+                            <img src="assets/img/304x171/p03v16hz.jpg" alt="Blue-Beaked Bird">
+                            <span id="promo__list-item__video-icon"></span>
+
+                            <div class="promo__list-item__img-desc">
+                                The bird with the killer blue beak
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="promo__list-item__related-article-container">
+                                <p class="promo__list-item__related-article-title">
+                                    Attenborough's Story of Life
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Almost Invisisble animals -->
+                    <li class="promo__list-item">
+                        <a class="promo__list-item__link" href="#">
+                            <img src="assets/img/304x171/p056n6fv.jpg" alt="Almost-invisible Octopus">
+                            <div class="promo__list-item__img-desc">
+                                The animals that are almost invisible
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Penguin overheating -->
+                    <li class="promo__list-item">
+                        <a class="promo__list-item__link" href="#">
+                            <img src="assets/img/304x171/p03w6py6.jpg" alt="Penguin Horde">
+                            <div class="promo__list-item__img-desc">
+                                When penguins are in danger of over heating
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="promo__list-item__related-article-container">
+                                <p class="promo__list-item__related-article-title">
+                                    Attenborough's Story of Life
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Sea Otter -->
+                    <li class="promo__list-item">
+                        <a class="promo__list-item__link" href="#">
+                            <img src="assets/img/304x171/p056c89n.jpg" alt="Sea Otter">
+                            <div class="promo__list-item__img-desc">
+                                From California to Cambodia, otters are bouncing back
+                            </div>
+                        </a>
+
+                        <a class="promo__list-item__link" href="#">
+                            <div class="promo__list-item__related-article-container">
+                                <p class="promo__list-item__related-article-title">
+                                    Conservation
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Two headed Porpoise -->
+                    <li class="promo__list-item">
+                        <a class="promo__list-item__link" href="#">
+                            <img src="assets/img/304x171/p055zxql.jpg" alt="Two-headed baby porpoise">
+                            <div class="promo__list-item__img-desc">
+                                'Two-headed' baby porpoise found in net
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="promo__list-item__related-article-container">
+                                <p class="promo__list-item__related-article-title">
+                                    Rare Earth
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Dung Beetle -->
+                    <li class="promo__list-item">
+                        <a class="promo__list-item__link" href="#">
+                            <img src="assets/img/304x171/p0558z4r.jpg" alt="Dung Beetle">
+                            <div class="promo__list-item__img-desc">
+                                What dung beetles really eat
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="promo__list-item__related-article-container">
+                                <p class="promo__list-item__related-article-title">
+                                    The Truth About Animals
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Predator Spider -->
+                    <li class="promo__list-item">
+                        <a class="promo__list-item__link" href="#">
+                            <img src="assets/img/304x171/p0559wnc.jpg" alt="Predator Spider">
+                            <div class="promo__list-item__img-desc">
+                                The spiders that hunt other spiders
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="promo__list-item__related-article-container">
+                                <p class="promo__list-item__related-article-title">
+                                    Weird
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Zebras -->
+                    <li class="promo__list-item">
+                        <a class="promo__list-item__link" href="#">
+                            <img src="assets/img/304x171/p0550x2s.jpg" alt="Hostile and Defensive Zebra's">
+                            <div class="promo__list-item__img-desc">
+                                The most powerful punches and kicks of all time
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="promo__list-item__related-article-container">
+                                <p class="promo__list-item__related-article-title">
+                                    Record Breakers
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Interactive  -->
+                    <li class="promo__list-item">
+                        <a class="promo__list-item__link" href="#">
+                            <img src="assets/img/304x171/p055nx70.jpg" alt="Oldest living things">
+                            <span id="promo__list-item__interactive-icon"></span>
+
+                            <div class="promo__list-item__img-desc">
+                                Quiz: What are the oldest living things on Earth?
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Gallery  -->
+                    <li class="promo__list-item">
+                        <a class="promo__list-item__link" href="#">
+                            <img src="assets/img/304x171/p053y2tt.jpg" alt="Barn Owl">
+                            <span id="promo__list-item__gallery-icon"></span>
+
+                            <div class="promo__list-item__img-desc">
+                                Meet this year's Springwatch superstars
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="promo__list-item__related-article-container">
+                                <p class="promo__list-item__related-article-title">
+                                    Springwatch
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <!-- Underwater wreckage  -->
+                    <li class="promo__list-item">
+                        <a class="promo__list-item__link" href="#">
+                            <img src="assets/img/304x171/p04z06c3.jpg" alt="Underwater Wreckage">
+                            <div class="promo__list-item__img-desc">
+                                Divers' mesmerising images of wrecks
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="genre-links__section">
+                <div class="genre-links__container">
+                    <div class="genre-links__link">
+                        <a href="#">
+                            <img src="assets/img/208x208/p04thn26.jpg" alt="Blue Planet II">
+                            <span class="genre-links__link-desc">Blue Planet II</span>
+                        </a>
+                    </div>
+                    <div class="genre-links__link">
+                        <a href="#">
+                            <img src="assets/img/208x208/p053xwwt.jpg" alt="Springwatch">
+                            <span class="genre-links__link-desc">Springwatch</span>
+                        </a>
+                    </div>
+                    <div class="genre-links__link">
+                        <a href="#">
+                            <img src="assets/img/208x208/p05jqpy8.jpg" alt="Me, Tribes and Predators">
+                            <span class="genre-links__link-desc">Me, Tribes &amp; Predators</span>
+                        </a>
+                    </div>
+                    <div class="genre-links__link">
+                        <a href="#">
+                            <img src="assets/img/208x208/p053xsfc.jpg" alt="Mexico">
+                            <span class="genre-links__link-desc">Mexico</span>
+                        </a>
+                    </div>
+                    <div class="genre-links__link">
+                        <a href="">
+                            <img src="assets/img/208x208/p03dmycj.jpg" alt="Barrier Reef">
+                            <span class="genre-links__link-desc">Barrier Reef</span>
+                        </a>
+                    </div>
+                    <div class="genre-links__link">
+                        <a href="">
+                            <img src="assets/img/208x208/p04xrhxp.jpg" alt="Wild Ireland">
+                            <span class="genre-links__link-desc">Wild Ireland</span>
+                        </a>
+                    </div>
+                    <div class="genre-links__link">
+                        <a href="">
+                            <img src="assets/img/208x208/p04xrhqc.jpg" alt="Big Birds">
+                            <span class="genre-links__link-desc">Big Birds</span>
+                        </a>
+                    </div>
+                    <div class="genre-links__link">
+                        <a href="">
+                            <img src="assets/img/208x208/p04thn26.jpg" alt="Growing up Wild">
+                            <span class="genre-links__link-desc">Growing Up Wild</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <!-- BBC Three -->
+            <div class="bbc-three-promo__container">
+                <div class="bbc-three-promo__content-div">
+                    <h2 class="bbc-three-promo__title">BBC Three</h2>
+                    <div class="bbc-three-promo__list-container">
+                        <ul class="bbc-three-promo__list">
+
+                            <!-- Mental Health -->
+                            <li class="bbc-three-promo__list-item">
+                                <a class="bbc-three-promo__list-item__link" href="#">
+                                    <img src="assets/img/bbc-three/p05jnckn.jpg" alt="Torn picture of Mum/Child">
+                                    <div class="bbc-three-promo__list-item__headline-container">
+                                        <h3 class="bbc-three-promo__list-item__headline">
+                                            I disowned my mum for my mental health
+                                        </h3>
+                                        <h4>BBC THREE</h4>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <!-- What Dater are you? -->
+                            <li class="bbc-three-promo__list-item">
+                                <a class="bbc-three-promo__list-item__link" href="#">
+                                    <img src="assets/img/bbc-three/p05jncgl.jpg" alt="Couple using phones and embracing">
+                                    <div class="bbc-three-promo__list-item__headline-container">
+                                        <h3 class="bbc-three-promo__list-item__headline">
+                                            Quiz: What kind of dater are you?
+                                        </h3>
+                                        <h4>BBC THREE</h4>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <!-- Five game shows -->
+                            <li class="bbc-three-promo__list-item">
+                                <a class="bbc-three-promo__list-item__link" href="#">
+                                    <img src="assets/img/bbc-three/p05jn9x3.jpg" alt="Takeshis Castle gameshow">
+                                    <div class="bbc-three-promo__list-item__headline-container">
+                                        <h3 class="bbc-three-promo__list-item__headline">
+                                            Five game shows we want to return
+                                        </h3>
+                                        <h4>BBC THREE</h4>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <!-- Bizarre Birthdays -->
+                            <li class="bbc-three-promo__list-item">
+                                <a class="bbc-three-promo__list-item__link" href="#">
+                                    <img src="assets/img/bbc-three/p05jnbst.jpg" alt="Massive birthday cake">
+                                    <div class="bbc-three-promo__list-item__headline-container">
+                                        <h3 class="bbc-three-promo__list-item__headline">
+                                            The bizarre birthdays of sports stars
+                                        </h3>
+                                        <h4>BBC THREE</h4>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <aside role="complementary">
+                <nav class="footer-primary-links">
+                    <ul class="footer-primary-links__list">
+                        <li class="footer-primary-links__list-items"><a href="#">Home</a></li>
+                        <li class="footer-primary-links__list-items"><a href="#">News</a></li>
+                        <li class="footer-primary-links__list-items"><a href="#">Sports</a></li>
+                        <li class="footer-primary-links__list-items"><a href="#">Weather</a></li>
+                        <li class="footer-primary-links__list-items"><a href="#">iPlayer</a></li>
+                        <li class="footer-primary-links__list-items"><a href="#">TV</a></li>
+                        <li class="footer-primary-links__list-items"><a href="#">Radio</a></li>
+                        <li class="footer-primary-links__list-items"><a href="#">CBBC</a></li>
+                        <li class="footer-primary-links__list-items"><a href="#">CBeebies</a></li>
+                        <li class="footer-primary-links__list-items"><a href="#">Food</a></li>
+                        <li class="footer-primary-links__list-items"><a href="#">Bitesize</a></li>
+                        <li class="footer-primary-links__list-items"><a href="#">Music</a></li>
+                        <li class="footer-primary-links__list-items"><a href="#">Earth</a></li>
+                        <li class="footer-primary-links__list-items"><a href="#">Arts</a></li>
+                        <li class="footer-primary-links__list-items"><a href="#">Make It Digital</a></li>
+                        <li class="footer-primary-links__list-items"><a href="#">Taster</a></li>
+                        <li class="footer-primary-links__list-items"><a href="#">Local</a></li>
+                        <li class="footer-primary-links__list-items"><a href="#">Tomorrow's World</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <div class="footer__content-info">
+                <ul>
+                    <li class="footer__content-info__list-items"><a href="#">Terms of Use</a></li>
+                    <li class="footer__content-info__list-items"><a href="#">About the BBC</a></li>
+                    <li class="footer__content-info__list-items"><a href="#">Privacy Policy</a></li>
+                    <li class="footer__content-info__list-items"><a href="#">Cookies</a></li>
+                    <li class="footer__content-info__list-items"><a href="#">Accessibility Help</a></li>
+                    <li class="footer__content-info__list-items"><a href="#">Parental Guidance</a></li>
+                    <li class="footer__content-info__list-items"><a href="#">Contact the BBC</a></li>
+                    <li class="footer__content-info__list-items"><a href="#">Get Personalised Newsletters</a></li>
+                </ul>
+                <small>
+                    <strong>Copyright &copy; 2017 BBC.</strong>
+                    The BBC is not responsible for the content of external sites.
+                    <span><a href="#">Read about our approact to external linking</a></span>
+                </small>                
+            </div>
+        </footer>
+
+    </body>
+</html>
