@@ -27,7 +27,7 @@ footer,header,hgroup,menu,nav,section {
     display:block;
 }
 
-nav ul {
+ul, ol, li {
     list-style:none;
 }
 
@@ -75,12 +75,14 @@ input, select {
     width:100%;
 }
 
-/* Utilities 
---------------------- */
+/* ===================
+        Utilities 
+===================== */
 .hidden { display: none; }
 
-/* Header 
---------------------- */
+/* ==================
+        Header 
+===================== */
 header {
     background: #fff;
     border-bottom: 1px solid #ccc;
@@ -92,60 +94,61 @@ header .content-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     font-size: 12px;
 }
 
 /* Logo */
 .logo-wrapper {
-    padding: 3vh;
-    width: calc(100%/3);                                                /* width: 33.333% */
+    padding: 0.5em;
+    width: calc(100% / 5);
 }
 
 /* My BBC */
 header #mybbc-wrapper { 
     border-left: 1px solid #ccc;
-    width: calc(100%/2);                                                /* width: 50% */
+    width: calc(100% / 3); 
 }
 
-header #mybbc-wrapper .mybbc-signin { padding: 1vw; }
-
+.mybbc-signin a#mybbc-signin--link {
+    padding: 0.4em 0.75em;
+}
+.mybbc-signin a#mybbc-signin--link:hover{
+    border-bottom: 4px solid rgb(17, 136, 187);
+}
 .mybbc-signin #mybbc-signin--link #mybbc-signin-username {
     display: flex;
     flex-direction: row;
-    line-height: 1.5;
-    justify-content: left;
+    line-height: 2.5;
 }
 
 .mybbc-signin #mybbc-signin--link #mybbc-signin-username:before {
     content: "";
     background: 0 0, url(../img/sprites/user-icon.png) no-repeat;
     background-size: contain;
-    /* image-rendering: -webkit-optimize-contrast; */
-    width: 25px;
-    height: 20px;
+    image-rendering: -webkit-optimize-contrast;
+    width: 28px;
+    height: 28px;
+    margin: 2px 8px;
 }
 
 /* Notifications */
-header .mybbc-notifications-wrapper {
-    width: calc(100%/10);                                               /* width: 10%; */
-}
-.mybbc-notifications-wrapper a#mybbc-notifications {
+header .mybbc-notifications-wrapper a#mybbc-notifications {
     display: block;
     position: relative;
     border-left: 1px solid #ccc;
-    line-height: 1.5;
+    width: auto;
 }
 
 #mybbc-notifications:before {
     content: "";
     background: 0 0, url(../img/sprites/icon-bell.png) no-repeat;
     background-size: cover;
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     display: inline-block;
-    margin: 10px;
+    margin: 12px;
 }
 
 #mybbc-notifications .notifications-link--triangle {
@@ -169,29 +172,99 @@ header .mybbc-notifications-wrapper {
 }
 
 /* Navigation  */
-header nav.nav-container {
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-}
 header nav .nav-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 nav .nav-list li.nav-list__list-item {
-    line-height: 2;
-    padding: 1vw;
+    line-height: 3;
     border-left: 1px solid #ccc;
 }
-nav .nav-list .nav-list__list-item:first-of-type {
-    border: 0;
+
+nav .nav-list li.nav-list__list-item a {
+    padding: 0.25em 0.85em;
+}
+
+nav .nav-list .nav-list__list-item:last-of-type {
+    border-right: 1px solid #ccc;
+}
+
+nav .nav-list li.nav-list__list-item:last-child > a {
+    display: flex;
+    flex-direction: row;
+}
+
+li#nav-news:hover {
+    border-bottom: 4px solid rgb(153, 34, 17);;
+}
+
+li#nav-sport:hover {
+    border-bottom: 4px solid rgb(255, 210, 48);
+}
+
+li#nav-weather:hover {
+    border-bottom: 4px solid rgb(136, 204, 238);
+}
+
+li#nav-iplayer:hover {
+    border-bottom: 4px solid rgb(237, 61, 125);
+}
+
+li#nav-tv:hover, li#nav-radio:hover,
+li#nav-more:hover {
+    border-bottom: 4px solid rgb(38, 38, 38);
+}
+
+li#nav-more .nav-arrow-dropdown:before {
+    content: "▼";
+    font-size: 10px;
+    margin: 5px 0 0 35px;
+}
+
+main .nav-list__dropdown__panel.hidden {
+    display: none;
+}
+
+main .nav-list__dropdown__panel {
+    width: 80%;
+    margin: 1% 10.5% auto;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.nav-list__dropdown__panel h2 {
+    font-family: "Gill Sans","Gill Sans MT",Arial,sans-serif;
+    font-size: 2.154em;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.nav-list__dropdown__panel ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 14px;
+    padding: 4px;
+}
+.nav-list__dropdown__panel ul li.nav-list__dropdown__list-item {
+    padding: 0.5em;
+    margin: 0.2em;
+}
+
+li.nav-list__dropdown__list-item:hover {
+    background: #333;
+}
+
+li.nav-list__dropdown__list-item:hover a {
+    color: #fff;
 }
 
 /* Search */
 header .search-bar__container {
-    padding: 3vh;
-    width: calc(100%/1.5);                                          /* width: 0.666; */
+    width: calc(100% / 2);
+    padding: 0.75em;
 }
 
 header form {
@@ -202,5 +275,11 @@ header form {
 header form div {
     display: flex;
     flex-direction: row;
-    padding: 0.55vw;
+    padding: 0.5em;
+}
+header form div > input[type="text"]::placeholder {
+    color: black;
+}
+header form div > button {
+    font-size: 14px;
 }
