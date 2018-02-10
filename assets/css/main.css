@@ -345,6 +345,35 @@ section.promo__section, section.genre-links__section {
     width: 80%;
     margin: 0 auto;
 }
+ul.promo__list li.promo__list-item a {
+    opacity: 1;
+}
+
+ul.promo__list li.promo__list-item a:hover {
+    opacity: 0.65;
+}
+
+ul.promo__list li.promo__list-item a.promo__list-item__related-desc:hover div {
+    opacity: 1;
+    background: #333;
+    color: white;
+}
+
+li.promo__list-item .promo__list-item__img-desc {
+    padding: 1em 0.5em;
+    background: white;
+    font-size: 1.5rem;
+}
+
+li.promo__list-item div.promo__list-item__related-article-container {
+    padding: 1em 0.5em;
+    background: white;
+    border-top: 1px solid #ccc;
+}
+
+div.promo__list-item__related-article-container p {
+    font-weight: bold;
+}
 
 /* Genre links */
 section.genre-links__section div.genre-links__container {
@@ -355,4 +384,22 @@ section.genre-links__section div.genre-links__container {
     padding: 1em;
     margin: 0 auto;
     width: 75%;
+}
+
+.genre-links__link a {
+    display: grid;
+    grid-template-rows: repeat(2, 0.75fr); 
+}
+
+.genre-links__link:first-child .genre-links__link-desc {
+    background: #005361;
+}
+.genre-links__link .genre-links__link-desc {
+    padding: 1em 0.5em;
+    background: #09a60b;
+    color: white;
+}
+.genre-links__link-desc p {
+    font-size: 0.9em;
+    font-weight: bold;
 }
