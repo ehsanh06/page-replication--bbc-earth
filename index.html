@@ -6,117 +6,126 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>BBC Earth</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
     </head>
 
     <body>
         <header>
-            <!-- Logo -->
-            <div class="logo-wrapper"></div>
+            
+            <div class="content-container">
 
-            <!-- My BBC -->
-            <div id="mybbc-wrapper">
-                <div class="mybbc-signin">
-                    <a id="mybbc-signin--link" href="#">
-                        <span id="mybbc-signin-username">Sign In</span>
-                    </a>
+                <!-- Logo -->
+                <div class="logo-wrapper">
+                    <img src="assets/img/sprites/blq-orbit-blocks_grey.svg" alt="BBC Logo" />
                 </div>
+    
+                <!-- My BBC -->
+                <div id="mybbc-wrapper">
+                    <div class="mybbc-signin">
+                        <a id="mybbc-signin--link" href="#">
+                            <span id="mybbc-signin-username">Sign In</span>
+                        </a>
+                    </div>
+                </div>
+                
                 <div class="mybbc-notifications-wrapper">
                     <a name="notifications" id="mybbc-notifications" href="#">
-                        <!-- ::before  -->
                         <div class="notifications-link--triangle"></div>
                         <div class="notifications-link--triangle"></div>
                     </a>
                 </div>
-            </div>
-
-            <!-- Navigation -->
-            <nav role="navigation" aria-label="BBC" class="nav-container">
-                <ul class="nav-list">
-                    <li id="nav-news" class="nav-list__list-item">
-                        <a href="#">News</a>
-                    </li>
-                    <li id="nav-sport" class="nav-list__list-item">
-                        <a href="#">Sport</a>
-                    </li>
-                    <li id="nav-weather" class="nav-list__list-item">
-                        <a href="#">Weather</a>
-                    </li>
-                    <li id="nav-iplayer" class="nav-list__list-item">
-                        <a href="#">iPlayer</a>
-                    </li>
-                    <li id="nav-tv" class="nav-list__list-item">
-                        <a href="#"></a>TV</li>
-                    <li id="nav-radio" class="nav-list__list-item">
-                        <a href="#">Radio</a>
-                    </li>
-
-                    <!-- Dropdown  -->
-                    <li id="nav-more" class="nav-list__list-item">
-                        <a href="">More
-                            <span class="nav-arrow-dropdown"></span>
-                        </a>
-                        <div class="nav-list__dropdown__panel">
-                            <h2 id="nav-list__dropdown__panel-title">MORE</h2>
-                            <ul class="nav-list__dropdown__list">
-                                <li id="nav-cbbc" class="nav-list__dropdown__list-item">
-                                    <a href="#">CBBC</a>
-                                </li>
-                                <li id="nav-cbeebies" class="nav-list__dropdown__list-item">
-                                    <a href="#">CBeebies</a>
-                                </li>
-                                <li id="nav-food" class="nav-list__dropdown__list-item">
-                                    <a href="#">Food</a>
-                                </li>
-                                <li id="nav-bitesize" class="nav-list__dropdown__list-item">
-                                    <a href="#">Bitesize</a>
-                                </li>
-                                <li id="nav-music" class="nav-list__dropdown__list-item">
-                                    <a href="#">Music</a>
-                                </li>
-                                <li id="nav-earth" class="nav-list__dropdown__list-item">
-                                    <a href="#">Earth</a>
-                                </li>
-                                <li id="nav-arts" class="nav-list__dropdown__list-item">
-                                    <a href="#">Arts</a>
-                                </li>
-                                <li id="nav-digital" class="nav-list__dropdown__list-item">
-                                    <a href="#">Make It Digital</a>
-                                </li>
-                                <li id="nav-taster" class="nav-list__dropdown__list-item">
-                                    <a href="#">Taster</a>
-                                </li>
-                                <li id="nav-local" class="nav-list__dropdown__list-item">
-                                    <a href="#">Local</a>
-                                </li>
-                                <li id="nav-tomorrowsworld" class="nav-list__dropdown__list-item">
-                                    <a href="#">Tomorrow's World</a>
-                                </li>
-                            </ul>
+                <!-- Navigation -->
+                <nav role="navigation" aria-label="BBC" class="nav-container">
+                    <ul class="nav-list">
+                        <li id="nav-news" class="nav-list__list-item">
+                            <a href="#">News</a>
+                        </li>
+                        <li id="nav-sport" class="nav-list__list-item">
+                            <a href="#">Sport</a>
+                        </li>
+                        <li id="nav-weather" class="nav-list__list-item">
+                            <a href="#">Weather</a>
+                        </li>
+                        <li id="nav-iplayer" class="nav-list__list-item">
+                            <a href="#">iPlayer</a>
+                        </li>
+                        <li id="nav-tv" class="nav-list__list-item">
+                            <a href="#">TV</a>
+                        </li>
+                        <li id="nav-radio" class="nav-list__list-item">
+                            <a href="#">Radio</a>
+                        </li>
+    
+                        <!-- Dropdown  -->
+                        <li id="nav-more" class="nav-list__list-item">
+                            <a href="">More
+                                <span class="nav-arrow-dropdown"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <!-- Search bar -->
+                <div class="search-bar__container">
+                    <!-- Search glyph viewed min-width 600px -->
+                    <a class="search-bar__mobile-button hidden" href="#" title="Search the BBC">Search</a>
+    
+                    <form action="get" role="search" accept-charset="utf-8" class="search-bar__form">
+                        <div>
+                            <input type="text" placeholder="Search">
+                            <button class="search-bar__button fa fa-search"></button>
                         </div>
-                    </li>
-                </ul>
-            </nav>
-
-            <!-- Search bar -->
-            <div class="search-bar__container">
-                <!-- Search glyph viewed min-width 600px -->
-                <a class="search-bar__mobile-button" href="#" title="Search the BBC">Search</a>
-
-                <form action="get" role="search" accept-charset="utf-8" class="search-bar__form">
-                    <div>
-                        <input type="text" placeholder="Search">
-                        <button class="search-bar__button"></button>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </header>
 
         <main>
+            <div class="nav-list__dropdown__panel hidden">
+                <h2 id="nav-list__dropdown__panel-title">MORE</h2>
+                <ul class="nav-list__dropdown__list">
+                    <li id="nav-cbbc" class="nav-list__dropdown__list-item">
+                        <a href="#">CBBC</a>
+                    </li>
+                    <li id="nav-cbeebies" class="nav-list__dropdown__list-item">
+                        <a href="#">CBeebies</a>
+                    </li>
+                    <li id="nav-food" class="nav-list__dropdown__list-item">
+                        <a href="#">Food</a>
+                    </li>
+                    <li id="nav-bitesize" class="nav-list__dropdown__list-item">
+                        <a href="#">Bitesize</a>
+                    </li>
+                    <li id="nav-music" class="nav-list__dropdown__list-item">
+                        <a href="#">Music</a>
+                    </li>
+                    <li id="nav-earth" class="nav-list__dropdown__list-item">
+                        <a href="#">Earth</a>
+                    </li>
+                    <li id="nav-arts" class="nav-list__dropdown__list-item">
+                        <a href="#">Arts</a>
+                    </li>
+                    <li id="nav-digital" class="nav-list__dropdown__list-item">
+                        <a href="#">Make It Digital</a>
+                    </li>
+                    <li id="nav-taster" class="nav-list__dropdown__list-item">
+                        <a href="#">Taster</a>
+                    </li>
+                    <li id="nav-local" class="nav-list__dropdown__list-item">
+                        <a href="#">Local</a>
+                    </li>
+                    <li id="nav-tomorrowsworld" class="nav-list__dropdown__list-item">
+                        <a href="#">Tomorrow's World</a>
+                    </li>
+                </ul>
+            </div>
 
             <!-- Banner section -->
             <section class="genre-banner__section">
                 <div class="genre-banner__logo-container">
-                    <span id="genre-banner__logo"></span>
+                    <img id="genre-banner__logo" src="assets/img/sprites/earth-logo.svg" />
                 </div>
                 <nav class="genre-banner__nav-container">
                     <ul class="genre-banner__nav-list">

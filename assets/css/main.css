@@ -1,0 +1,285 @@
+/* 
+    html5doctor.com Reset Stylesheet
+    v1.6.1
+    Last Updated: 2010-09-17
+    Author: Richard Clark - http://richclarkdesign.com 
+    Twitter: @rich_clark
+----------------------------------------- */
+
+* {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    font-family: Arial, Helvetica, freesans, sans-serif;
+
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+ul, ol, li {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+img {
+    display: block;
+    width: 100%;
+}
+hr {
+    display: block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+    font-weight:bold;
+    width:100%;
+}
+
+/* ===================
+        Utilities 
+===================== */
+.hidden { display: none; }
+
+/* ==================
+        Header 
+===================== */
+header {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    font-weight: 700;
+    width: 100%;
+}
+
+header .content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+/* Logo */
+.logo-wrapper {
+    padding: 0.5em;
+    width: calc(100% / 5);
+}
+
+/* My BBC */
+header #mybbc-wrapper { 
+    border-left: 1px solid #ccc;
+    width: calc(100% / 3); 
+}
+
+.mybbc-signin a#mybbc-signin--link {
+    padding: 0.4em 0.75em;
+}
+.mybbc-signin a#mybbc-signin--link:hover{
+    border-bottom: 4px solid rgb(17, 136, 187);
+}
+.mybbc-signin #mybbc-signin--link #mybbc-signin-username {
+    display: flex;
+    flex-direction: row;
+    line-height: 2.5;
+}
+
+.mybbc-signin #mybbc-signin--link #mybbc-signin-username:before {
+    content: "";
+    background: 0 0, url(../img/sprites/user-icon.png) no-repeat;
+    background-size: contain;
+    image-rendering: -webkit-optimize-contrast;
+    width: 28px;
+    height: 28px;
+    margin: 2px 8px;
+}
+
+/* Notifications */
+header .mybbc-notifications-wrapper a#mybbc-notifications {
+    display: block;
+    position: relative;
+    border-left: 1px solid #ccc;
+    width: auto;
+}
+
+#mybbc-notifications:before {
+    content: "";
+    background: 0 0, url(../img/sprites/icon-bell.png) no-repeat;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin: 12px;
+}
+
+#mybbc-notifications .notifications-link--triangle {
+    position: absolute;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+}
+
+#mybbc-notifications .notifications-link--triangle:first-of-type {
+    border-left: 5px solid #ccc;
+    top: 35%;
+    left: 0;
+    z-index: 1;
+}
+
+#mybbc-notifications .notifications-link--triangle:last-of-type {
+    border-left: 5px solid #fff;
+    top: 35%;
+    left: -1px;
+    z-index: 2;
+}
+
+/* Navigation  */
+header nav .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav .nav-list li.nav-list__list-item {
+    line-height: 3;
+    border-left: 1px solid #ccc;
+}
+
+nav .nav-list li.nav-list__list-item a {
+    padding: 0.25em 0.85em;
+}
+
+nav .nav-list .nav-list__list-item:last-of-type {
+    border-right: 1px solid #ccc;
+}
+
+nav .nav-list li.nav-list__list-item:last-child > a {
+    display: flex;
+    flex-direction: row;
+}
+
+li#nav-news:hover {
+    border-bottom: 4px solid rgb(153, 34, 17);;
+}
+
+li#nav-sport:hover {
+    border-bottom: 4px solid rgb(255, 210, 48);
+}
+
+li#nav-weather:hover {
+    border-bottom: 4px solid rgb(136, 204, 238);
+}
+
+li#nav-iplayer:hover {
+    border-bottom: 4px solid rgb(237, 61, 125);
+}
+
+li#nav-tv:hover, li#nav-radio:hover,
+li#nav-more:hover {
+    border-bottom: 4px solid rgb(38, 38, 38);
+}
+
+li#nav-more .nav-arrow-dropdown:before {
+    content: "▼";
+    font-size: 10px;
+    margin: 5px 0 0 35px;
+}
+
+main .nav-list__dropdown__panel.hidden {
+    display: none;
+}
+
+main .nav-list__dropdown__panel {
+    width: 80%;
+    margin: 1% 10.5% auto;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.nav-list__dropdown__panel h2 {
+    font-family: "Gill Sans","Gill Sans MT",Arial,sans-serif;
+    font-size: 2.154em;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.nav-list__dropdown__panel ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 14px;
+    padding: 4px;
+}
+.nav-list__dropdown__panel ul li.nav-list__dropdown__list-item {
+    padding: 0.5em;
+    margin: 0.2em;
+}
+
+li.nav-list__dropdown__list-item:hover {
+    background: #333;
+}
+
+li.nav-list__dropdown__list-item:hover a {
+    color: #fff;
+}
+
+/* Search */
+header .search-bar__container {
+    width: calc(100% / 2);
+    padding: 0.75em;
+}
+
+header form {
+    display: block;
+    background: #ccc;
+    width: 100%;
+}
+header form div {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+}
+header form div > input[type="text"]::placeholder {
+    color: black;
+}
+header form div > button {
+    font-size: 14px;
+}
