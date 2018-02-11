@@ -283,3 +283,170 @@ header form div > input[type="text"]::placeholder {
 header form div > button {
     font-size: 14px;
 }
+
+
+/* ======================
+        Main 
+======================== */
+
+/* Genre Banner */
+main section.genre-banner__section {
+    background: url('../../assets/img/p05cq9pg.jpg');
+    background-size: cover;
+    height: 720px;
+}
+
+.genre-banner__section .genre-banner__logo-container img {
+    width: 10%;
+    margin: 0% 10% auto;
+    padding: 1em 0;
+}
+main nav .genre-banner__nav-list {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    background: #00000085;
+}
+
+.genre-banner__nav-list li.genre-banner__nav-list-item {
+    margin: 8px 0;
+    padding: 4px 12px;
+    border-right: 1px solid #767676;
+    font-size: 14px;
+}
+
+.genre-banner__nav-list li.genre-banner__nav-list-item a {
+    color: white;
+}
+
+main .genre-banner__title-container {
+    background: #09a60b;
+    width: 60%;
+    margin: 1.5% 10% auto;
+}
+.genre-banner__title-container h2 {
+    font-size: 3rem;
+    padding: 14px;
+    color: white;
+    margin: 0;
+}
+
+/* Promo Section */
+section.promo__section, section.genre-links__section {
+    background-color: #f1f1ee;
+    padding: 1em 0;
+}
+
+.promo__section ul.promo__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul.promo__list li.promo__list-item {
+    position: relative;
+}
+ul.promo__list li.promo__list-item a {
+    opacity: 1;
+}
+
+ul.promo__list li.promo__list-item a:hover {
+    opacity: 0.65;
+}
+
+ul.promo__list li.promo__list-item a.promo__list-item__related-desc:hover div {
+    opacity: 1;
+    background: #333;
+    color: white;
+}
+
+li.promo__list-item .promo__list-item__img-desc {
+    padding: 1em 0.75em;
+    background: white;
+    font-size: 1.4rem;
+}
+
+li.promo__list-item div.promo__list-item__related-article-container {
+    padding: 1em;
+    background: white;
+    border-top: 1px solid #ccc;
+}
+
+div.promo__list-item__related-article-container p {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+li.promo__list-item a.promo__list-item__link span {
+    display: block;
+    width: 64px;
+    height: 64px;
+    background: rgba(1, 175, 3, 0.9);
+    position: absolute;
+    top: 121px;
+    opacity: 1;
+    background-image: url(../img/sprites/tablet-s36965f6e8f.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+li.promo__list-item a:hover span {
+    opacity: 1;
+    background-color: #333;
+}
+
+/* Video Icon Span */
+li.promo__list-item a.promo__list-item__link span#promo__list-item__video-icon {
+    background-position-y: -3600px;
+}
+li.promo__list-item a.promo__list-item__link:hover span#promo__list-item__video-icon {
+    background-position-y: -3680px;
+}
+
+/* Interactive Icon Span */
+li.promo__list-item a.promo__list-item__link span#promo__list-item__interactive-icon {
+    background-position-y: -3280px;
+}
+li.promo__list-item a.promo__list-item__link:hover span#promo__list-item__interactive-icon {
+    background-position-y: -3360px;
+}
+
+/* Gallery Icon Span */
+li.promo__list-item a.promo__list-item__link span#promo__list-item__gallery-icon {
+    background-position-y: -1680px;
+}
+li.promo__list-item a.promo__list-item__link:hover span#promo__list-item__gallery-icon {
+    background-position-y: -1760px;
+}
+
+/* Genre links */
+section.genre-links__section div.genre-links__container {
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 1em;
+    padding: 1em;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.genre-links__link a {
+    display: grid;
+    grid-template-rows: repeat(2, 0.75fr); 
+}
+
+.genre-links__link:first-child .genre-links__link-desc {
+    background: #005361;
+}
+.genre-links__link .genre-links__link-desc {
+    padding: 1em 0.5em;
+    background: #09a60b;
+    color: white;
+}
+.genre-links__link-desc p {
+    font-size: 0.9em;
+    font-weight: bold;
+}
