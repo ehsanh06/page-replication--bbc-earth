@@ -345,6 +345,10 @@ section.promo__section, section.genre-links__section {
     width: 80%;
     margin: 0 auto;
 }
+
+ul.promo__list li.promo__list-item {
+    position: relative;
+}
 ul.promo__list li.promo__list-item a {
     opacity: 1;
 }
@@ -360,19 +364,62 @@ ul.promo__list li.promo__list-item a.promo__list-item__related-desc:hover div {
 }
 
 li.promo__list-item .promo__list-item__img-desc {
-    padding: 1em 0.5em;
+    padding: 1em 0.75em;
     background: white;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 li.promo__list-item div.promo__list-item__related-article-container {
-    padding: 1em 0.5em;
+    padding: 1em;
     background: white;
     border-top: 1px solid #ccc;
 }
 
 div.promo__list-item__related-article-container p {
     font-weight: bold;
+    font-size: 0.9rem;
+}
+
+li.promo__list-item a.promo__list-item__link span {
+    display: block;
+    width: 64px;
+    height: 64px;
+    background: rgba(1, 175, 3, 0.9);
+    position: absolute;
+    top: 121px;
+    opacity: 1;
+    background-image: url(../img/sprites/tablet-s36965f6e8f.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+li.promo__list-item a:hover span {
+    opacity: 1;
+    background-color: #333;
+}
+
+/* Video Icon Span */
+li.promo__list-item a.promo__list-item__link span#promo__list-item__video-icon {
+    background-position-y: -3600px;
+}
+li.promo__list-item a.promo__list-item__link:hover span#promo__list-item__video-icon {
+    background-position-y: -3680px;
+}
+
+/* Interactive Icon Span */
+li.promo__list-item a.promo__list-item__link span#promo__list-item__interactive-icon {
+    background-position-y: -3280px;
+}
+li.promo__list-item a.promo__list-item__link:hover span#promo__list-item__interactive-icon {
+    background-position-y: -3360px;
+}
+
+/* Gallery Icon Span */
+li.promo__list-item a.promo__list-item__link span#promo__list-item__gallery-icon {
+    background-position-y: -1680px;
+}
+li.promo__list-item a.promo__list-item__link:hover span#promo__list-item__gallery-icon {
+    background-position-y: -1760px;
 }
 
 /* Genre links */
