@@ -454,12 +454,16 @@ section.genre-links__section div.genre-links__container {
 /* ======================
         Footer
 ======================== */
-footer {
+footer { 
     background-color: #4c4c4c;
+}
+
+footer .bbc-three-promo__container {
     background-image: url(../img/sprites/p037r8h2.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     color: white;
+    padding: 1em 0;
 }
 
 footer .bbc-three-promo__container .bbc-three-promo__content-div {
@@ -501,4 +505,62 @@ div.bbc-three-promo__list-item__headline-container h4 {
     color: #ccc;
     font-size: 0.9rem;
     font-weight: 100;
+}
+
+/* Aside */
+footer aside {
+    border-top: 1px solid #949494;
+    padding-bottom: 1em;
+    font-size: 0.9rem;
+}
+
+aside nav.footer-primary-links ul.footer-primary-links__list {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    border-bottom: 1px solid #949494;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 1em 0;
+}
+
+li.footer-primary-links__list-items a,
+li.footer__content-info__list-items a {
+    color: white;
+    font-size: 12px;
+}
+li.footer-primary-links__list-items a:hover,
+.footer__content-info ul li a:hover {
+    text-decoration: underline;
+}
+
+li.footer-primary-links__list-items {
+    border-right: 1px solid #949494;
+    padding: 0.5em;
+}
+
+/* Last column  */
+li.footer-primary-links__list-items.last-col {
+    border: 0;
+}
+
+/* Footer content div */
+.footer__content-info ul {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    margin: 0 auto;
+    width: 80%;
+}
+
+.footer__content-info small, 
+.footer__content-info small a {
+    color: white;
+}
+
+.footer__content-info small {
+    display: grid;
+    grid-template-columns: 0.35fr 0.8fr 1fr;
+    font-size: 14px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.5em 0;
 }
