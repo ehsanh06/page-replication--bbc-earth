@@ -450,3 +450,55 @@ section.genre-links__section div.genre-links__container {
     font-size: 0.9em;
     font-weight: bold;
 }
+
+/* ======================
+        Footer
+======================== */
+footer {
+    background-color: #4c4c4c;
+    background-image: url(../img/sprites/p037r8h2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+}
+
+footer .bbc-three-promo__container .bbc-three-promo__content-div {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.bbc-three-promo__content-div h2.bbc-three-promo__title {
+    font-size: 1.5rem;
+    padding: 1em 0;
+}
+
+.bbc-three-promo__content-div ul.bbc-three-promo__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+}
+
+ul.bbc-three-promo__list li.bbc-three-promo__list-item 
+div.bbc-three-promo__list-item__headline-container {
+    background: #333;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1em;
+    padding: 1em;
+}
+
+li.bbc-three-promo__list-item a {
+    color: white;
+}
+
+li.bbc-three-promo__list-item 
+div.bbc-three-promo__list-item__headline-container h3 {
+    line-height: 1.2;
+}
+
+li.bbc-three-promo__list-item 
+div.bbc-three-promo__list-item__headline-container h4 {
+    color: #ccc;
+    font-size: 0.9rem;
+    font-weight: 100;
+}
